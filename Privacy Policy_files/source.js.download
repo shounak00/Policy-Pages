@@ -1,0 +1,17 @@
+'use strict';
+
+var socket = io();
+
+$(document).ready(function () {
+	$("#email-button").click(function () {
+		var emailTextContent = $("#email-text:text").val();
+		if (emailTextContent) {
+			socket.emit("newEmail", emailTextContent);
+		}
+	});
+	
+	socket.on("emailSuccess", function(data) {
+		$("#newsletter").hide();
+		$("#newsletter-complete").show();
+	});
+});

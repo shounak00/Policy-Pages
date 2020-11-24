@@ -1,0 +1,163 @@
+* {
+	margin: 0px;
+	padding: 0px;	
+}
+
+html, body {
+	background-color: #000000;
+	font-family: 'Lusitana', serif;
+}
+
+/*LINKS*/
+a:link {
+    color: #ffffff;
+	text-decoration: none;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #ffffff;
+	text-decoration: underline;
+}
+
+a:active {
+    color: #ffffff;
+}
+
+/*HEADLINES*/
+h1 {
+	font-size: 42px;
+	color: #ffffff;
+}
+
+h2 {
+	font-size: 28px;
+	color: #ffffff;
+}
+
+.logo-container {
+	width: 100%;
+	height: 200px;
+	background-image: url("/client/files/background.png");
+	background-size: cover;
+	text-align: center;
+}
+
+/*CONTENT*/
+.space {
+	width: 100%;
+	height: 20px;
+	max-height: 20px;
+	min-height: 20px;
+}
+
+.tile {
+	padding: 20px 14px 20px 14px;
+}
+
+.tile-inner {
+	width: 100%;
+	height: 340px;
+	background-size: cover;
+	border-radius: 14px;
+}
+
+.tile-bg-3 {
+	background-image: url("/client/files/game_3.jpg");
+}
+
+.tile-bg-2 {
+	background-image: url("/client/files/game_2.jpg");
+}
+
+.tile-bg-1 {
+	background-image: url("/client/files/game_1.jpg");
+}
+
+.tile-name {
+	position: absolute;
+	width: 90%;
+	max-width: 280px;
+	top: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 6px;
+	background-color: #000000;
+	border-radius: 8px;
+}
+
+.tile-download-container {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 30px;
+}
+
+.tile-download {
+	display: inline-block;
+}
+
+.contact {
+	font-size: 28px;
+	color: #ffffff;
+}
+
+.line {
+	width: 100%;
+	height: 2px;
+	background-color: #949494;
+	border-radius: 1px;
+}
+
+/*Input*/
+.newsletter-container {
+	display: flex;
+	align-items: stretch;
+	margin: auto;
+	width : 90%;
+	max-width: 600px;
+}
+
+.newsletter-text {
+	flex-grow: 8;
+	width: 560‬px;
+	height: 40px;
+	padding-left: 12px;
+	margin-top: 20px;
+	display: inline-block;
+	border: 1px solid #cccccc;
+	border-bottom-left-radius: 6px;
+	border-top-left-radius: 6px;
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: 'Lusitana', serif;
+}
+
+.newsletter-button {
+	flex-grow: 2;
+	width: 140px;
+	height: 40px;
+	margin-top: 20px;
+	background-color: #2aae52;
+	color: white;
+	border: none;
+	border-bottom-right-radius: 6px;
+	border-top-right-radius: 6px;
+	font-size: 22px;
+	font-family: 'Lusitana', serif;
+	
+	transition: 0.1s;
+}
+
+.newsletter-button:hover {
+	cursor: pointer;
+	background-color: #2bc548;
+}
+
+.newsletter-button:active {
+	cursor: pointer;
+	background-color: #21894d;
+}
